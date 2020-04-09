@@ -1,0 +1,12 @@
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+C:\Users\JustNomad\source\repos\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+C:\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+C:\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+C:\Algorithms\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
+C:\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+C:\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
