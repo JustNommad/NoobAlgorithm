@@ -19,12 +19,48 @@ namespace Algorithms
                 Console.WriteLine("Тест бинарного поиска еще раз?");
                 start = Console.ReadLine();
             }
+            start = "Да";
+            while (start.Contains("Да"))
+            {
+                Console.Clear();
+                Console.Write("Введите размер факториала: ");
+                int x = int.Parse(Console.ReadLine());
+                x = Factorial(x);
+                Console.WriteLine("Ответ: {0}", x);
+                Console.WriteLine("Провести тест функции факториала еще раз?");
+                start = Console.ReadLine();
+            }
+            start = "Да";
+            while (start.Contains("Да"))
+            {
+                Console.Clear();
+                TestQuickSort();
+                Console.WriteLine("Тест быстрой сортировки еще раз?");
+                start = Console.ReadLine();
+            }
             Console.ReadLine();
+        }
+
+        public static void TestQuickSort()
+        {
+            int[] array = Initialization();
+
+            Console.WriteLine("Без сортировки: ");
+            PrintArray(array);
+
+            QuickSort.Sort(array);
+
+            Console.WriteLine("После сортировки: ");
+            PrintArray(array);
         }
 
         public static void TestBinarySearch()
         {
+            SelectionSort selectionSort = new SelectionSort();
             int[] array = Initialization();
+
+            array = selectionSort.selectionSort(array);
+            PrintArray(array);
 
             Console.Write("Введите искомое число: ");
             var s = Console.ReadLine();
@@ -38,23 +74,25 @@ namespace Algorithms
         {
             int[] array = new int[100];
             Random random = new Random();
-            SelectionSort selectionSort = new SelectionSort();
 
             for (int i = 0; i < array.Length; i++)
                 array[i] = random.Next(200);
 
-            array = selectionSort.selectionSort(array);
-
-            /*int temp = 0;
-            for (int i = 0; i < array.Length; i++)
-                for (int j = 0; j < array.Length; j++)
-                    if (array[i] < array[j])
-                    {
-                        temp = array[i];
-                        array[i] = array[j];
-                        array[j] = temp;
-                    }
-*/
+            return array;
+        }
+        public static int Factorial(int x)
+        {
+            if(x == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return x * Factorial(x - 1);
+            }
+        }
+        public static void PrintArray(int[] array)
+        {
             for (int i = 0; i < array.Length; i++)
             {
                 Console.Write("{0} ", array[i]);
@@ -64,7 +102,6 @@ namespace Algorithms
                 }
             }
             Console.WriteLine();
-            return array;
         }
     }
 }
