@@ -27,11 +27,10 @@ namespace Algorithms.Algrithms
         {
             List<int> list = new List<int>(arr);
             int[] array = new int[arr.Length];
-            int smallest = 0;
 
             for(int i = 0; i < arr.Length; i++)
             {
-                smallest = findSmallest(list);
+                int smallest = findSmallest(list);
                 array[i] = list[smallest];
                 list.RemoveAt(smallest);
             }

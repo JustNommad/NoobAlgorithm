@@ -11,6 +11,12 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Тест алгоритма обхода в ширину:");
+            BreadthFirstSearch bfs = new BreadthFirstSearch();
+            Console.WriteLine(bfs.Search());
+            Console.ReadLine();
+
             string start = "Да";
             while (start.Contains("Да"))
             {

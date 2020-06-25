@@ -16,3 +16,4 @@ C:\Users\JustNomad\source\repos\NoobAlgorithm\Algorithms\bin\Debug\Algorithms.pd
 C:\Users\JustNomad\source\repos\NoobAlgorithm\Algorithms\obj\Debug\Algorithms.csprojAssemblyReference.cache
 C:\Users\JustNomad\source\repos\NoobAlgorithm\Algorithms\obj\Debug\Algorithms.exe
 C:\Users\JustNomad\source\repos\NoobAlgorithm\Algorithms\obj\Debug\Algorithms.pdb
+C:\Users\JustNomad\source\repos\NoobAlgorithm\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache

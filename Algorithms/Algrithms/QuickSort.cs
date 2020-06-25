@@ -22,6 +22,7 @@ namespace Algorithms.Algrithms
                     arr[0] = arr[1];
                     arr[1] = temp;
                 }
+                return;
             }
             Sort(arr, 0, arr.Length - 1);
         }
@@ -33,7 +34,7 @@ namespace Algorithms.Algrithms
                 return;
             }
 
-            var pivotLocation = ChosePivotLocation(arr, leftStart, rightEnd);
+            var pivotLocation = ChosePivotLocation(leftStart, rightEnd);
             pivotLocation = OrderItemsAroundPivot(arr, leftStart, pivotLocation, rightEnd);
             Sort(arr, leftStart, pivotLocation - 1);
             Sort(arr, pivotLocation + 1, rightEnd);
@@ -73,7 +74,7 @@ namespace Algorithms.Algrithms
             arr[j] = temp;
         }
 
-        private static int ChosePivotLocation(int[] arr, int leftStart, int rightEnd)
+        private static int ChosePivotLocation(int leftStart, int rightEnd)
         {
             var middle = leftStart + (rightEnd - leftStart) / 2;
             return middle;
