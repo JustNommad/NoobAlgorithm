@@ -11,6 +11,11 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Тест алгоритма Дейскстры:");
+            DijkstrasAlgorithm diA = new DijkstrasAlgorithm();
+            diA.PrintEdges();
+            diA.AlgorithmRun();
+            Console.ReadLine();
 
             Console.WriteLine("Тест алгоритма обхода в ширину:");
             BreadthFirstSearch bfs = new BreadthFirstSearch();

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Algrithms\BinarySearch.cs" />
     <Compile Include="Algrithms\BreadthFirstSearch.cs" />
+    <Compile Include="Algrithms\DijkstrasAlgorithm.cs" />
     <Compile Include="Algrithms\QuickSort.cs" />
     <Compile Include="Algrithms\SelectionSort.cs" />
     <Compile Include="Program.cs" />
